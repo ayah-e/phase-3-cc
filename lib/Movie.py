@@ -29,14 +29,15 @@ class Movie:
     def average_rating(self):
         total = 0
         for review in self.reviews:
-            total += review.rating
+            total += review
         
         average = total / len(self.reviews)
 
         return average
         
-
+    #not sure if readme is asking for more
+    #i know this is adding 
     @classmethod
     def highest_rated(cls):
-        print(cls.all)
+        return cls.all
 

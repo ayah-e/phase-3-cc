@@ -59,7 +59,6 @@ class Review:
     def add_review_to_movie(self):
         self._movie.reviews.append(self)
 
-    
     def add_movie_to_viewer(self):
         if self._movie not in self._viewer.reviewed_movies:
             self._viewer.reviewed_movies.append(self._movie)
